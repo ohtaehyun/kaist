@@ -5,8 +5,8 @@ from django.http import HttpResponse
 
 
 def post_list(request):
-    msg = "AAAAAAAAAAAAAAAAAAAAA"
-    return HttpResponse("<h1>asdasdasdas</h1>"+msg)
+    msg = "MESSAGE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    return render(request,'post_list.html',{'msg':msg})
 
 
 def mysum(request,a,b):
