@@ -7,4 +7,10 @@ from django.http import HttpResponse
 def post_list(request):
     msg = "AAAAAAAAAAAAAAAAAAAAA"
     return HttpResponse("<h1>asdasdasdas</h1>"+msg)
-    pass
+
+
+def mysum(request,a,b):
+    return HttpResponse("<h1>"+str(a+b)+"</h1>")
+
+
+
